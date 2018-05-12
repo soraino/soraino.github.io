@@ -22,7 +22,7 @@
 
 <body>
     <!-- Header Section -->
-    <section class="tophead" role="tophead">
+    <section class="tophead" role="tophead" id="TopPage">
         <!-- Navigation Section -->
         <header id="header">
             <div class="header-content clearfix"> <a class="logo" href="#">Tang Kok Foon <p class="text-center" style="font-weight:500; ">FullStack Developer<p></a>
@@ -34,26 +34,29 @@
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
                 </nav>
+                <a class="to-top-btn active" href="#TopPage">back to top ^</a>
                 <a href="#" class="nav-toggle">Menu<span></span></a> </div>
         </header>
-        <div class="to-top-btn">back to top ^</div>
         <!-- Navigation Section -->
     </section>
     <!-- Header Section -->
     <!-- Welcome Section -->
-    <section class="section" id="top">
-        <div class="container-fluid" style="margin-top: 100px;">
-            <h1 id="welcomeText" class="text-center">
+    <section class="section">
+        <div class="container-fluid" style="margin-top: 100px; min-height: 200px">
+            <h1 class="text-center">
+                I am Tang Kok Foon.
+            </h1>
+            <h2 id="welcomeText" class="text-center">
+                I am 
                 <div id="dev">
-                    I am Tang Kok Foon.
+                    a developer.
                     <h1 id="typed">
-                        <p>I am a <span class="underline">Web Developer.</span></p>
-                        <p>I am an <span class="underline">ASP.NET Dev.</span></p>
-                        <p>I am an <span class="underline">ASP.NET Core Dev.</span></p>
-                        <p>I am a <span class="underline">Mobile App Developer.</span></p>
-                        <p>I am a <span class="underline">NodeJS Developer.</span></p> 
-                        <p>I am a <span class="underline">VueJS Developer.</span></p>
-                        <span>I am Tang Kok Foon.</span>
+                        <p>a Web.</p>
+                        <p>an ASP.NET Dev.</p>
+                        <p>an ASP.NET Core Dev.</p>
+                        <p>a Mobile App Dev.</p>
+                        <p>a NodeJS Dev.</p>
+                        <p>a VueJS Dev.</p>
                     </h1>
                 </div>
             </h1>
@@ -91,14 +94,19 @@
     </section>
     <!-- Biography Section -->
     <!-- Experiences section -->
-    <section id="Experience" class="section testimonials no-padding">
+    <section id="Experience" class="section testimonials no-top-padding">
             <div class="container-fluid">
-                <h3 style="color:white">
+                <h3>
                     Oct 2017 - Feb 2018
                 </h3>
                 <h1>
                     Government Technologies
                 </h1>
+                <img class="img-responsive" width="250" style="float: left; margin: 0px 15px 0px 0px;" src="./images/portfolio/govtech.JPG"/>
+                <p>
+                    I was very fortunate to be accepted into GovTech as an Intern. And During the internship I was given the task of creating and manage the server for a new product called 'Schoolpool' which helps facilitates the pairing of parents who wants to carpool their kids to school.
+                    <br><br>During this internship, I was given alot of opportunities to learn new lesson both technical and socially. Which helps me paint a better picture on how the tech industry works in a real world scenario. 
+                </p>
             </div>
     </section>
     <!-- Experiences section -->
@@ -178,7 +186,7 @@
                     <li><a href="#Biography">Biography</a></li>
                     <li><a href="#portfolio">Our Portfolio</a></li>
                     <li><a href="#Experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </div>
         </div>
