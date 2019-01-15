@@ -5,13 +5,10 @@ new Typed('#dev', {
         showCursor: false,
     });
 
-$(document).ready(function () {
-    $('#achievements').masonry({
-        itemSelector: '.portfolio-item'
-    })
-
+$(document).ready(()=>{
+    
     // Header Scroll
-    $(window).on('scroll', function () {
+    $(window).on('scroll', () =>{
         var scroll = $(window).scrollTop();
 
         if (scroll >= 50) {
@@ -26,7 +23,7 @@ $(document).ready(function () {
     var sections = $('section')
     nav = $('nav[role="navigation"]');
 
-    $(window).on('scroll', function () {
+    $(window).on('scroll', ()=> {
         var cur_pos = $(this).scrollTop();
         sections.each(function () {
             var top = $(this).offset().top - 276
@@ -37,7 +34,7 @@ $(document).ready(function () {
             }
         });
     });
-    nav.find('a').on('click', function () {
+    nav.find('a').on('click', ()=> {
         var $el = $(this)
         id = $el.attr('href');
         $('html, body').animate({
@@ -58,3 +55,10 @@ $(document).ready(function () {
     });
 
 });
+
+// placing another $(document).ready function here so that it will wait for the doc.ready to be done then run this
+$(document).ready(()=>{
+    $('#achievements').masonry({
+        itemSelector: '.portfolio-item'
+    })
+})
